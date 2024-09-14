@@ -1,0 +1,1 @@
+create Band, Concert, Venue class in a models.py file
