@@ -29,13 +29,13 @@ Before running the project, ensure you have the following installed:
 
 ## Attributes:
 
-- id: Primary key.
-- name: Name of the band.
-- hometown: The band's hometown.
-- Relationships:
-
+- **id**: Primary key.
+- **name**: Name of the band.
+- **hometown**: The band's hometown.
+### Relationships:
 - A band has many concerts.
-- Methods:
+
+### Methods:
 
 **venues()**: Returns a list of venues where the band has performed.
 most_performances(session): Class method to find the band with the most performances.
@@ -44,12 +44,12 @@ most_performances(session): Class method to find the band with the most performa
 
 ## Attributes:
 
-- id: Primary key.
-- title: Name of the venue.
-- city: The city where the venue is located.
-- Relationships:
+- **id**: Primary key.
+- **title**: Name of the venue.
+- **city**: The city where the venue is located.
+### Relationships:
+- A venue has many concerts.
 
-A venue has many concerts.
 ## Methods:
 
 - **bands()**: Returns a list of bands that have performed at the venue.
@@ -58,13 +58,14 @@ Represents a concert performed by a band at a venue.
 
 ## Attributes:
 
-- id: Primary key.
-- date: Date of the concert.
-- band_id: Foreign key to the band.
-- venue_id: Foreign key to the venue.
-- Relationships:
+- **id**: Primary key.
+- **date**: Date of the concert.
+- **band_id**: Foreign key to the band.
+- **venue_id**: Foreign key to the venue.
 
-A concert is associated with one band and one venue.
+### Relationships:
+-A concert is associated with one band and one venue.
+
 ### Methods:
 
 - **hometown_show()**: Returns True if the concert is in the band's hometown.
