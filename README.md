@@ -88,8 +88,7 @@ Clone the project repository to your local machine.
 
 Example: Find all concerts by a specific band:
 
-> def get_concerts_by_band(band_name):
-
+def get_concerts_by_band(band_name):
     concerts = session.query(Concert).join(Band).filter(Band.name == band_name).all()
     return concerts
 # Example display of the tables:    
