@@ -86,11 +86,8 @@ Clone the project repository to your local machine.
 ## Custom Queries
 - You can customize or extend the project by writing additional queries or modifying existing methods in runfile.py.
 
-Example: Find all concerts by a specific band:
 
-def get_concerts_by_band(band_name):
-    concerts = session.query(Concert).join(Band).filter(Band.name == band_name).all()
-    return concerts
+
 # Example display of the tables:    
 ## Concert Table
 ![Concert Table](images//concert.jpg)
